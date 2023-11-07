@@ -2,7 +2,7 @@
 ---
 # E-commerce Text Classification
 
-This repository contains a Python script for text classification in an e-commerce context. The script includes data preprocessing, balancing the dataset, training and evaluating classification models, and using FastText for text classification.
+This repository contains a Jupyter Notebook for text classification in an e-commerce context. The script includes data preprocessing, balancing the dataset, training and evaluating classification models, and using FastText for text classification.
 
 ## Table of Contents
 
@@ -27,11 +27,12 @@ Data preprocessing steps include:
 - Standardizing category names
 - Combining 'category' and 'desc' columns
 - Subsampling the data to balance categories
-- Text preprocessing (removing special characters, extra spaces, and converting text to lowercase)
+- Text preprocessing (removing special characters, extra spaces, converting text to lowercase and removing stopwords)
+- Calculating document vectors by averaging word vectors for each document in the list using a pre-trained word embedding model
 
 ## Model Training and Evaluation
 
-The script trains and evaluates two classification models:
+trains and evaluates two classification models:
 1. **Logistic Regression:** A supervised classification model trained on preprocessed text data.
 2. **Gradient Boosting Classifier:** Another supervised classification model for text classification.
    
